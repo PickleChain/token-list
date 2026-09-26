@@ -1,0 +1,59 @@
+{
+  "name": "Pickle Chain Testnet",
+  "timestamp": "2026-09-26T00:00:00.000Z",
+  "version": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "keywords": [
+    "pickle",
+    "pickle chain",
+    "testnet",
+    "pepper",
+    "curated"
+  ],
+  "logoURI": "https://raw.githubusercontent.com/PickleChain/token-list/main/testnet/logos/tags/pickle.png",
+  "tags": {
+    "protocol": {
+      "name": "Protocol token",
+      "description": "The native protocol token of Pickle Chain, used for staking and the fee share."
+    },
+    "wrapped": {
+      "name": "Wrapped asset",
+      "description": "A one-for-one ERC-20 wrapper of a native asset."
+    }
+  },
+  "tokens": [
+    {
+      "chainId": 78270,
+      "address": "0x8d1Ab7dD27a5Fd87452748012Dc7f319f51b877e",
+      "name": "Pickle",
+      "symbol": "PKL",
+      "decimals": 18,
+      "logoURI": "https://raw.githubusercontent.com/PickleChain/token-list/main/testnet/logos/tokens/0x8d1Ab7dD27a5Fd87452748012Dc7f319f51b877e.png",
+      "tags": [
+        "protocol"
+      ],
+      "extensions": {
+        "website": "https://picklechain.xyz",
+        "explorer": "https://explorer.picklechain.xyz/address/0x8d1Ab7dD27a5Fd87452748012Dc7f319f51b877e"
+      }
+    },
+    {
+      "chainId": 78270,
+      "address": "0x9ca92dAFAEF0B2C9A16C2f9742963745a02C0d41",
+      "name": "Wrapped Ether",
+      "symbol": "WETH",
+      "decimals": 18,
+      "logoURI": "https://raw.githubusercontent.com/PickleChain/token-list/main/testnet/logos/tokens/0x9ca92dAFAEF0B2C9A16C2f9742963745a02C0d41.svg",
+      "tags": [
+        "wrapped"
+      ],
+      "extensions": {
+        "website": "https://pepper.picklechain.xyz",
+        "explorer": "https://explorer.picklechain.xyz/address/0x9ca92dAFAEF0B2C9A16C2f9742963745a02C0d41"
+      }
+    }
+  ]
+}

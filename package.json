@@ -1,0 +1,19 @@
+{
+  "name": "@picklechain/token-list",
+  "version": "1.0.0",
+  "private": true,
+  "description": "The curated Pickle Chain token lists (Uniswap Token Lists format) and address tags, one folder per network.",
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "validate": "node scripts/validate.mjs",
+    "test": "node scripts/validate.mjs && node --test \"scripts/*.test.mjs\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PickleChain/token-list.git"
+  }
+}

@@ -1,0 +1,141 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://raw.githubusercontent.com/PickleChain/token-list/main/schemas/tags.schema.json",
+  "title": "Pickle Chain address tags",
+  "description": "Human-readable labels for contract addresses on one Pickle Chain network. Each network folder (testnet/, mainnet/) has its own tags.json; token metadata lives in the same folder's tokenlist.json, which follows the Uniswap Token Lists schema.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "name",
+    "timestamp",
+    "version",
+    "chainId",
+    "categories",
+    "tags"
+  ],
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 60
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "version": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "major",
+        "minor",
+        "patch"
+      ],
+      "properties": {
+        "major": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "minor": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "patch": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    },
+    "chainId": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "The network's chain id (78270 for testnet). scripts/validate.mjs checks it against the folder the file is in."
+    },
+    "categories": {
+      "type": "object",
+      "minProperties": 1,
+      "propertyNames": {
+        "pattern": "^[a-z][a-z0-9-]{0,19}$"
+      },
+      "additionalProperties": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "name",
+          "description"
+        ],
+        "properties": {
+          "name": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 20
+          },
+          "description": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 200
+          }
+        }
+      }
+    },
+    "tags": {
+      "type": "object",
+      "description": "Keyed by the EIP-55 checksummed contract address.",
+      "propertyNames": {
+        "pattern": "^0x[0-9a-fA-F]{40}$"
+      },
+      "additionalProperties": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "name",
+          "category",
+          "project",
+          "url",
+          "logo"
+        ],
+        "properties": {
+          "name": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 40,
+            "description": "The label an explorer shows in place of the address."
+          },
+          "category": {
+            "type": "string",
+            "description": "A key of the top-level categories object."
+          },
+          "project": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 40
+          },
+          "url": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "pattern": "^https://",
+            "maxLength": 200
+          },
+          "logo": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "pattern": "^https://raw\\.githubusercontent\\.com/PickleChain/token-list/main/(testnet|mainnet)/logos/tags/[A-Za-z0-9._-]+\\.(png|svg)$",
+            "description": "A logo committed to this repository under <network>/logos/tags/, in the same network folder as this file, or null."
+          },
+          "note": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 200
+          }
+        }
+      }
+    }
+  }
+}

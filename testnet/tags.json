@@ -1,0 +1,332 @@
+{
+  "$schema": "../schemas/tags.schema.json",
+  "name": "Pickle Chain Testnet address tags",
+  "timestamp": "2026-09-26T00:00:00.000Z",
+  "version": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "chainId": 78270,
+  "categories": {
+    "token": {
+      "name": "Token",
+      "description": "A token contract. Token metadata and logos live in tokenlist.json; the tag gives explorers a readable label."
+    },
+    "protocol": {
+      "name": "Protocol",
+      "description": "Core Pickle Chain contracts: fees, staking, burning, faucet, registry."
+    },
+    "bridge": {
+      "name": "Bridge",
+      "description": "Contracts that move ETH between Pickle Chain and its settlement layer."
+    },
+    "dex": {
+      "name": "DEX",
+      "description": "Pepper exchange contracts: factories, routers, quoters and the token launcher."
+    },
+    "pool": {
+      "name": "Pool",
+      "description": "A liquidity pool of the Pepper exchange."
+    },
+    "toolkit": {
+      "name": "Toolkit",
+      "description": "Pickle Toolkit contracts: multisend, locker, streams and the deploy factory."
+    },
+    "names": {
+      "name": "Names",
+      "description": "The Pickle Name Service."
+    },
+    "oracle": {
+      "name": "Oracle",
+      "description": "Price feeds read by contracts and apps."
+    },
+    "arcade": {
+      "name": "Arcade",
+      "description": "The Pickle arcade: its bank and every game contract."
+    }
+  },
+  "tags": {
+    "0x8d1Ab7dD27a5Fd87452748012Dc7f319f51b877e": {
+      "name": "Pickle (PKL)",
+      "category": "token",
+      "project": "Pickle",
+      "url": "https://picklechain.xyz",
+      "logo": "https://raw.githubusercontent.com/PickleChain/token-list/main/testnet/logos/tags/pickle.png",
+      "note": "The Pickle Chain protocol token, used for staking and the fee share. Gas is paid in ETH."
+    },
+    "0x9ca92dAFAEF0B2C9A16C2f9742963745a02C0d41": {
+      "name": "Wrapped Ether (WETH)",
+      "category": "token",
+      "project": "Pepper",
+      "url": "https://pepper.picklechain.xyz",
+      "logo": null,
+      "note": "WETH9: ETH wrapped one-for-one as an ERC-20, the quote asset of the Pepper pools."
+    },
+    "0x546D19d1b55822F1eeEBA112D8356499efE09d70": {
+      "name": "L2 bridge",
+      "category": "bridge",
+      "project": "Pickle",
+      "url": "https://bridge.picklechain.xyz",
+      "logo": "https://raw.githubusercontent.com/PickleChain/token-list/main/testnet/logos/tags/pickle.png",
+      "note": "The L2 side of the ETH bridge between Pickle Chain and its settlement layer."
+    },
+    "0x3DD98096BB282e60FC3bf3BF1b39360E7478A10c": {
+      "name": "L2 bridge (previous)",
+      "category": "bridge",
+      "project": "Pickle",
+      "url": "https://bridge.picklechain.xyz",
+      "logo": "https://raw.githubusercontent.com/PickleChain/token-list/main/testnet/logos/tags/pickle.png",
+      "note": "An earlier deployment of the L2 bridge contract. New deposits and withdrawals use the current bridge."
+    },
+    "0x1F84699415Bb743b47cDf21298A0425e7B4C7928": {
+      "name": "Faucet",
+      "category": "protocol",
+      "project": "Pickle",
+      "url": "https://faucet.picklechain.xyz",
+      "logo": "https://raw.githubusercontent.com/PickleChain/token-list/main/testnet/logos/tags/pickle.png",
+      "note": "Hands out small amounts of testnet ETH."
+    },
+    "0x27D89d7179a8D4b593642682984232Cc0060248E": {
+      "name": "Sequencer registry",
+      "category": "protocol",
+      "project": "Pickle",
+      "url": "https://picklechain.xyz",
+      "logo": "https://raw.githubusercontent.com/PickleChain/token-list/main/testnet/logos/tags/pickle.png"
+    },
+    "0x4543733e833C7aE9303953D5d17b41BBc09eeCCF": {
+      "name": "PKL staking",
+      "category": "protocol",
+      "project": "Pickle",
+      "url": "https://picklechain.xyz",
+      "logo": "https://raw.githubusercontent.com/PickleChain/token-list/main/testnet/logos/tags/pickle.png",
+      "note": "Stake PKL to earn a share of protocol fees."
+    },
+    "0x7f7437aa7Be2dBAe99E08d2ACd62D9494d3A9e66": {
+      "name": "Staker rewards",
+      "category": "protocol",
+      "project": "Pickle",
+      "url": "https://picklechain.xyz",
+      "logo": "https://raw.githubusercontent.com/PickleChain/token-list/main/testnet/logos/tags/pickle.png",
+      "note": "StakerRewards: receives the incentives share of fees and pays it out to PKL stakers."
+    },
+    "0xEd9DC1fb34816160aE6AdcC8D85E4D90c40bb63c": {
+      "name": "Fee router",
+      "category": "protocol",
+      "project": "Pickle",
+      "url": "https://picklechain.xyz",
+      "logo": "https://raw.githubusercontent.com/PickleChain/token-list/main/testnet/logos/tags/pickle.png",
+      "note": "Splits protocol revenue between buyback, treasury, security fund and stakers."
+    },
+    "0xB36E5B75531a869edE08BDA0fE96D2c87891769c": {
+      "name": "Fee router (previous)",
+      "category": "protocol",
+      "project": "Pickle",
+      "url": "https://picklechain.xyz",
+      "logo": "https://raw.githubusercontent.com/PickleChain/token-list/main/testnet/logos/tags/pickle.png",
+      "note": "An earlier fee router. The previous token factory still pays its launch fees here."
+    },
+    "0x25A9D9cB1B770D906cDCF32d52E43B386Ab934Aa": {
+      "name": "Fee router (retired)",
+      "category": "protocol",
+      "project": "Pickle",
+      "url": "https://picklechain.xyz",
+      "logo": "https://raw.githubusercontent.com/PickleChain/token-list/main/testnet/logos/tags/pickle.png",
+      "note": "A retired fee router. Nothing pays it any more."
+    },
+    "0xa6FB812e7FcF225B086047aFb4c38F40c2c91691": {
+      "name": "Buyback vault",
+      "category": "protocol",
+      "project": "Pickle",
+      "url": "https://picklechain.xyz",
+      "logo": "https://raw.githubusercontent.com/PickleChain/token-list/main/testnet/logos/tags/pickle.png",
+      "note": "BuybackVault: buys PKL with the buyback share of fees and sends it to the burner."
+    },
+    "0xeA2d195bc9AB7BBCEA277266c487F6Cd5284d008": {
+      "name": "PKL burner",
+      "category": "protocol",
+      "project": "Pickle",
+      "url": "https://picklechain.xyz",
+      "logo": "https://raw.githubusercontent.com/PickleChain/token-list/main/testnet/logos/tags/pickle.png",
+      "note": "Burner: PKL sent here is burned."
+    },
+    "0x0Eb91DAd27Ad4cb7a13f5Eb69CB988Bef5c6BfC8": {
+      "name": "Toolkit factory",
+      "category": "toolkit",
+      "project": "Pickle",
+      "url": "https://toolkit.picklechain.xyz",
+      "logo": "https://raw.githubusercontent.com/PickleChain/token-list/main/testnet/logos/tags/pickle.png",
+      "note": "PickleToolkit: deploys simple tokens, NFT collections and multisigs."
+    },
+    "0x3CE882b49A546E9fe44243E966D7F871a74A74f8": {
+      "name": "Multisend",
+      "category": "toolkit",
+      "project": "Pickle",
+      "url": "https://toolkit.picklechain.xyz",
+      "logo": "https://raw.githubusercontent.com/PickleChain/token-list/main/testnet/logos/tags/pickle.png",
+      "note": "PickleMultisend: sends ETH or a token to many recipients in one transaction."
+    },
+    "0xc10d8DF15A47C497544C367BA66C22Bf2002ca77": {
+      "name": "Locker",
+      "category": "toolkit",
+      "project": "Pickle",
+      "url": "https://toolkit.picklechain.xyz",
+      "logo": "https://raw.githubusercontent.com/PickleChain/token-list/main/testnet/logos/tags/pickle.png",
+      "note": "PickleLocker: time-locks tokens, LP tokens and NFTs."
+    },
+    "0x7859734d788206Dd4C6caFd0330832311FA3e5Ea": {
+      "name": "Streams",
+      "category": "toolkit",
+      "project": "Pickle",
+      "url": "https://toolkit.picklechain.xyz",
+      "logo": "https://raw.githubusercontent.com/PickleChain/token-list/main/testnet/logos/tags/pickle.png",
+      "note": "PickleStreams: vesting schedules and token streams."
+    },
+    "0xa0E12c391F203AfEc97d702E02796d3b92306B20": {
+      "name": "Pickle Name Service",
+      "category": "names",
+      "project": "Pickle",
+      "url": "https://names.picklechain.xyz",
+      "logo": "https://raw.githubusercontent.com/PickleChain/token-list/main/testnet/logos/tags/pickle.png",
+      "note": "PNS: .pkl names, their records and reverse records."
+    },
+    "0xba00000000000000000000000000000000000001": {
+      "name": "Price feeds",
+      "category": "oracle",
+      "project": "Pickle",
+      "url": "https://picklechain.xyz",
+      "logo": "https://raw.githubusercontent.com/PickleChain/token-list/main/testnet/logos/tags/pickle.png",
+      "note": "The chain's built-in price registry, read through a Chainlink-shaped interface."
+    },
+    "0x745BfcA1DeeFB4e075D19181Ab0879584224d67e": {
+      "name": "Pepper factory",
+      "category": "dex",
+      "project": "Pepper",
+      "url": "https://pepper.picklechain.xyz",
+      "logo": "https://raw.githubusercontent.com/PickleChain/token-list/main/testnet/logos/tags/pepper.png",
+      "note": "PepperFactory: creates the constant-product pools."
+    },
+    "0xcC44Da8d4258086C3C999fb35a0a35618d7b83DC": {
+      "name": "Pepper router",
+      "category": "dex",
+      "project": "Pepper",
+      "url": "https://pepper.picklechain.xyz",
+      "logo": "https://raw.githubusercontent.com/PickleChain/token-list/main/testnet/logos/tags/pepper.png",
+      "note": "PepperRouter: swaps and liquidity on the constant-product pools."
+    },
+    "0xa28Eb80929e567d0C71854840b3A67Aa3852Cfc9": {
+      "name": "Pepper concentrated factory",
+      "category": "dex",
+      "project": "Pepper",
+      "url": "https://pepper.picklechain.xyz",
+      "logo": "https://raw.githubusercontent.com/PickleChain/token-list/main/testnet/logos/tags/pepper.png",
+      "note": "PepperClFactory: creates the concentrated-liquidity pools."
+    },
+    "0x38B3660956427960322e0073338a2F965E074D5b": {
+      "name": "Pepper concentrated router",
+      "category": "dex",
+      "project": "Pepper",
+      "url": "https://pepper.picklechain.xyz",
+      "logo": "https://raw.githubusercontent.com/PickleChain/token-list/main/testnet/logos/tags/pepper.png",
+      "note": "PepperClRouter: swaps on the concentrated-liquidity pools."
+    },
+    "0x94998623322ee264daF47E3f1b27C73BCab9Da53": {
+      "name": "Pepper quoter",
+      "category": "dex",
+      "project": "Pepper",
+      "url": "https://pepper.picklechain.xyz",
+      "logo": "https://raw.githubusercontent.com/PickleChain/token-list/main/testnet/logos/tags/pepper.png",
+      "note": "PepperClQuoter: read-only swap quotes."
+    },
+    "0x84f8250FdCC1299E91456aa1306855eA41D50b5b": {
+      "name": "Pepper pool namer",
+      "category": "dex",
+      "project": "Pepper",
+      "url": "https://pepper.picklechain.xyz",
+      "logo": "https://raw.githubusercontent.com/PickleChain/token-list/main/testnet/logos/tags/pepper.png",
+      "note": "PepperPoolNamer: gives each concentrated pool a readable name and symbol."
+    },
+    "0x4E1AF4D951Dab8DcEE0c35355a31a445C5A428f8": {
+      "name": "Pepper token factory",
+      "category": "dex",
+      "project": "Pepper",
+      "url": "https://pepper.picklechain.xyz",
+      "logo": "https://raw.githubusercontent.com/PickleChain/token-list/main/testnet/logos/tags/pepper.png",
+      "note": "PepperTokenFactory: launches new tokens. Tokens it creates are not vetted by this list."
+    },
+    "0x698ee43AB4c769218D05BfB10Ff40fE9A6415FC7": {
+      "name": "Pepper token factory (previous)",
+      "category": "dex",
+      "project": "Pepper",
+      "url": "https://pepper.picklechain.xyz",
+      "logo": "https://raw.githubusercontent.com/PickleChain/token-list/main/testnet/logos/tags/pepper.png",
+      "note": "An earlier token launcher. Tokens it created are not vetted by this list."
+    },
+    "0xBe46BC224c37d809c9702Fc685d5Ab3d2Ff6452b": {
+      "name": "Pepper PKL/WETH 0.3%",
+      "category": "pool",
+      "project": "Pepper",
+      "url": "https://pepper.picklechain.xyz",
+      "logo": "https://raw.githubusercontent.com/PickleChain/token-list/main/testnet/logos/tags/pepper.png",
+      "note": "The concentrated PKL/WETH pool at the 0.3% fee tier. The buyback vault buys PKL here."
+    },
+    "0x85C3912b3Cc9F881b001A6e0C5ed2AE23e474374": {
+      "name": "Pepper PKL/WETH 0.05%",
+      "category": "pool",
+      "project": "Pepper",
+      "url": "https://pepper.picklechain.xyz",
+      "logo": "https://raw.githubusercontent.com/PickleChain/token-list/main/testnet/logos/tags/pepper.png",
+      "note": "The concentrated PKL/WETH pool at the 0.05% fee tier."
+    },
+    "0xF664D2281A2eD605E52876DE43eB528df6AdEc3c": {
+      "name": "Arcade bank",
+      "category": "arcade",
+      "project": "Pickle",
+      "url": "https://minigame.picklechain.xyz",
+      "logo": "https://raw.githubusercontent.com/PickleChain/token-list/main/testnet/logos/tags/pickle.png",
+      "note": "ArcadeBank: holds the arcade's bankroll and pays out every game."
+    },
+    "0xc958705fC60bCca42f5Ab4c2F79d43D61365855e": {
+      "name": "Arcade: Arena",
+      "category": "arcade",
+      "project": "Pickle",
+      "url": "https://minigame.picklechain.xyz",
+      "logo": "https://raw.githubusercontent.com/PickleChain/token-list/main/testnet/logos/tags/pickle.png"
+    },
+    "0x0305eC550793D7ECCd856Ba58140E4C3e4d022d4": {
+      "name": "Arcade: Crash",
+      "category": "arcade",
+      "project": "Pickle",
+      "url": "https://minigame.picklechain.xyz",
+      "logo": "https://raw.githubusercontent.com/PickleChain/token-list/main/testnet/logos/tags/pickle.png"
+    },
+    "0x051B816b557a4De822E67ac1b7455653302ccd0A": {
+      "name": "Arcade: Claw",
+      "category": "arcade",
+      "project": "Pickle",
+      "url": "https://minigame.picklechain.xyz",
+      "logo": "https://raw.githubusercontent.com/PickleChain/token-list/main/testnet/logos/tags/pickle.png"
+    },
+    "0x1f14CAaBB6CF8Aa377360348185796be87735b6F": {
+      "name": "Arcade: Patch",
+      "category": "arcade",
+      "project": "Pickle",
+      "url": "https://minigame.picklechain.xyz",
+      "logo": "https://raw.githubusercontent.com/PickleChain/token-list/main/testnet/logos/tags/pickle.png"
+    },
+    "0x60E35D9Db4c6B7D7bEa8CB290c5584ae0292BC8F": {
+      "name": "Arcade: Trellis",
+      "category": "arcade",
+      "project": "Pickle",
+      "url": "https://minigame.picklechain.xyz",
+      "logo": "https://raw.githubusercontent.com/PickleChain/token-list/main/testnet/logos/tags/pickle.png"
+    },
+    "0xF2241cFe4ab8d1a4bA26C67Fa9967b8fB886d55c": {
+      "name": "Arcade: Stack",
+      "category": "arcade",
+      "project": "Pickle",
+      "url": "https://minigame.picklechain.xyz",
+      "logo": "https://raw.githubusercontent.com/PickleChain/token-list/main/testnet/logos/tags/pickle.png"
+    }
+  }
+}
