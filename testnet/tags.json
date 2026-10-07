@@ -80,12 +80,12 @@
       "note": "An earlier deployment of the L2 bridge contract. New deposits and withdrawals use the current bridge."
     },
     "0x1F84699415Bb743b47cDf21298A0425e7B4C7928": {
-      "name": "Faucet",
+      "name": "Faucet (previous)",
       "category": "protocol",
       "project": "Pickle",
       "url": "https://faucet.picklechain.xyz",
       "logo": "https://raw.githubusercontent.com/PickleChain/token-list/main/testnet/logos/tags/pickle.png",
-      "note": "Hands out small amounts of testnet ETH."
+      "note": "The first faucet contract, retired in September 2026. Its public drip() let bots skip the site's checks, so its funds moved to the current faucet and it now pays 1 wei."
     },
     "0x27D89d7179a8D4b593642682984232Cc0060248E": {
       "name": "Sequencer registry",
